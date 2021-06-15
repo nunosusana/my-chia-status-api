@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  chia:
+    container_name: api
+    build:
+      context: .
+      target: production
+    volumes:
+      - type: bind
+        source: ~/.chia/mainnet/config/ssl/
+        target: /chia-ssl
+      - type: bind
+        source: ~/.chia/
+        target: /root/.chia
+    ports:
+      - 3443:3443
+    command: npm run start:prod
+    env_file:
+      - .env-docker
+    network_mode: host
+    restart: always
+
