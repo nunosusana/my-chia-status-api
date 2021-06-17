@@ -1,6 +1,3 @@
-
-
-
 ## Description
 
 Connects your CHIA farms to whatever you want. 
@@ -36,10 +33,12 @@ The docker version require docker installation, aswell as docker-compose.
 
 This API depends on chia-blockchain.  
 
-  
-
+## Specification
+<p>
+  Check the API specification <a href="https://github.com/nunosusana/my-chia-status-api/blob/main/docs/Wiki/SPECIFICATION.md" target="blank">here</a>.
+</p>
 
 # This API was developed using NestJS
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+  <a href="https://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
